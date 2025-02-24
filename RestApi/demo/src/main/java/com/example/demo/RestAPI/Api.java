@@ -14,5 +14,15 @@ public class Api {
         return "hello";
     }
 
-   
+    @GetMapping("/web/message")
+    public String message(Model model){
+        model.addAttribute("message","Hello from BridgeLabz");
+        return "message";
+
+    }
+    @GetMapping("/web/message")
+    public String message(Model model){
+        model.addAttribute("message","Hello from BridgeLabz");
+        return "message";
+    }
 }
